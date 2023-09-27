@@ -104,7 +104,7 @@ a {
     background-color: #394867;
     color: #f1f6f9;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 40px 60px;
 }
@@ -113,8 +113,14 @@ a {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    max-width: 600px;
 }
-
+.m1left h1{
+    font-size: 75px;
+}
+.m1left p{
+    font-size: 25px;
+}
 
 /*Right side of main container*/
 .m1right{
@@ -122,12 +128,14 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     flex: 3;
     width: 50%;
-    height: 75vh;
+    height: 55vh;
     border-radius: 20px 20px;
     text-align: start;
     padding: 40px 30px;
+    max-width: 400px;
 }
 /* Inputs and qr code*/
 .leftm1right{
@@ -139,7 +147,7 @@ a {
 .leftm1right input{
     margin: 4px;
     padding-left: 10px;
-    height: 25%;
+    height: 16%;
     width: 200px;
     border: none;
     border-radius: 5px 5px;
@@ -147,8 +155,8 @@ a {
 .topm1right{
     display: flex;
     justify-content: center;
-    height: 30%;
-    padding-bottom: 30px;
+    height: 60%;
+    width: 400px
 }
 .topm1right img{
     width: 75%;
@@ -156,7 +164,8 @@ a {
 .rightm1right{
     background-color: #f1f6f9;
     color: #212a3e;
-    width: 30%;
+    width: 35%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -173,10 +182,35 @@ a {
 .policy{
     color: #9BA4B5;
     max-width: 400px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
 }
 .gsbtn{
-    width: 100px
+    width: 35%;
+    height: 35px;
+    align-self: flex-start;
+    margin-top: 25px;
+    margin-left: 6px;
+    border: none;
+    border-radius: 5px 5px;
+    color: #f1f6f9;
+    background-color: rgb(5, 71, 5);
+    font-size: 15px;
+    transition: background-color 1s;
+    flex-shrink: 1;
 }
-.bottom1right{
-    display: flex;
+.gsbtn:hover{
+    background-color: green;
+}
+.gsbtn:focus,
+.gsbtn:active {
+  background-color: black;
+  transition: none;
+}
+.bottomm1right{
+    max-width: 125vh;
+    align-self: center;
+    padding-left: 8px;
+    flex-wrap: wrap;
 }
