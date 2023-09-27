@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: #f1f6f9;
+    color: #394867;
+    padding: 10px 20px;
+    display: flex;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #394867;
+}
+a {
+    text-decoration: none;
+    background-image: linear-gradient(
+      to right,
+      #9BA4B5,
+      #394867 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before{
+    content: '';
+    background: #394867;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+  
+
+.navbarleft div{
+    font-weight: bold;
+    padding: 20px;
+}
+.navbarright button{
+    height: 35px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 10px 10px;
+    padding: 0px;
+    border: none;
+    background-color: #394867;
+    color: #f1f6f9;
+    transition: background-color 1s;
+}
+.navbtn:hover{
+    background-color: green;
+}
+.navbtn:focus,
+.navbtn:active {
+  background-color: black;
+  transition: none;
+}
+.navbarleft li, .navbarright li{
+    padding: 20px;
+}
+
+.navbarleft{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbarright{
+    display: flex;
+    flex-wrap: wrap;
+}
+.maincontainer{
+    background-color: #394867;
+    color: #f1f6f9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+/*left side of main container*/
+.m1left{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/*Right side of main container*/
+.m1right{
+    background-color: #212a3e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 3;
+    width: 50%;
+    height: 75vh;
+    border-radius: 20px 20px;
+    text-align: start;
+    padding: 40px 30px;
+}
+/* Inputs and qr code*/
+.leftm1right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 30px;
+}
+.leftm1right input{
+    margin: 4px;
+    padding-left: 10px;
+    height: 25%;
+    width: 200px;
+    border: none;
+    border-radius: 5px 5px;
+}
+.topm1right{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    padding-bottom: 30px;
+}
+.topm1right img{
+    width: 75%;
+}
+.rightm1right{
+    background-color: #f1f6f9;
+    color: #212a3e;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px 5px;
+    padding-top: 10px;
+}
+.rightm1right p {
+    padding: 5px;
+    text-align: center;
+}
+
+/* paragraph, check box and button*/
+.policy{
+    color: #9BA4B5;
+    max-width: 400px;
+}
+.gsbtn{
+    width: 100px
+}
+.bottom1right{
+    display: flex;
+}
