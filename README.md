@@ -1,2 +1,2 @@
-# Landing_page_template
-Landing Page Template
+# Sign Up Page
+A sign up page using html and css flex box
