@@ -107,6 +107,7 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 40px 60px;
+    height: 70vh;
 }
 /*left side of main container*/
 .m1left{
@@ -213,4 +214,18 @@ a {
     align-self: center;
     padding-left: 8px;
     flex-wrap: wrap;
+}
+.footer-wrapper{
+    background-color: #212a3e;
+    position: sticky;
+    top: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f6f9;
+    text-align: center;
+}
+body{
+    min-height: 100vh;
 }
